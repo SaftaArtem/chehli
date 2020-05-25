@@ -1,0 +1,24 @@
+
+; /* Start:"a:4:{s:4:"full";s:102:"/bitrix/templates/wise_shop2/components/wisesolutions/catalog.section/.default/script.js?1572896522429";s:6:"source";s:88:"/bitrix/templates/wise_shop2/components/wisesolutions/catalog.section/.default/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(function () {
+    
+    function dvs_moveCatalogTitle(){
+        var win = $(this);
+        if (win.width() <= 992){
+           $('section.h1').detach().prependTo('.ready_shop.container-fluid');
+        }else{
+            $('section.h1').detach().prependTo('.clearfix.ajax_section');
+        }
+        
+    };
+    dvs_moveCatalogTitle();
+    
+    $(window).on('resize', function(){
+        dvs_moveCatalogTitle();
+    });
+});
+
+
+
+/* End */
+;; /* /bitrix/templates/wise_shop2/components/wisesolutions/catalog.section/.default/script.js?1572896522429*/

@@ -1,0 +1,5 @@
+var configYouTubePlayer = {};
+var detail_offers_codes=[]; 
+var js_offer_selected=0;
+var do_after_fancybox='';
+var timer_basket2;
